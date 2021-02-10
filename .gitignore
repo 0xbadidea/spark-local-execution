@@ -9,6 +9,5 @@
 **/build
 **/dist
 **/pipelines.egg-info
-**/tests/data/bronze
-**/tests/data/silver
-**/tests/data/checkpoints
+**/.python_history
+**/.bash_history

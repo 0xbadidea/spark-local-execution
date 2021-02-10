@@ -70,8 +70,7 @@ RUN chown -R $USER:$USER /home/$USER/.jupyter
 USER $USER
 RUN mkdir /home/$USER/work
 WORKDIR /home/$USER/work
-CMD pyspark
 
-# pip install`
+# pip install
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --user -r requirements.txt
