@@ -59,8 +59,8 @@ ENV PYTHONPATH="${SPARK_HOME}/python:${SPARK_HOME}/python/lib/py4j-${py4j_versio
 USER $USER
 RUN mkdir -p /home/$USER/.jupyter/lab
 RUN pip install --user \
-        jupyter==1.0.0 \
-        jupyterlab==1.2.4
+        notebook==6.2.0 \
+        jupyterlab==3.0.7
 
 # give user permission to jupyter directory
 USER root
